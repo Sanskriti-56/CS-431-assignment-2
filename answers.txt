@@ -1,0 +1,8 @@
+1.vulnerability 1 is that an attacker can download any file present of the
+server (if the attacker knows the path to that file). For example, if the
+attacker wants to retrieve "/etc/passwd", he can simply make a get request for
+"/../etc/passwd". This vulnerability arises form the fact that the server is
+ready to serve any file without any restriction on the path.
+
+2. vulnerability 2 is that an attacker can execute any program
+present on the server. This vulnerability occurs because there is no restriction on the path. 
